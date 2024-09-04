@@ -8,10 +8,18 @@ import { FaBars } from "react-icons/fa";
 import { Dropdown } from "antd";
 import { IoChevronDownOutline } from "react-icons/io5";
 
-  const Header = () => {
+const Header = () => {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen2, setIsOpen2] = useState(false);
 
+  const handleDropdownVisibility = () => {
+    setIsOpen(!isOpen);
+  };
+  const handleDropdownVisibility2 = () => {
+    setIsOpen2(!isOpen2);
+  };
   return (
     <div className="h-[120px] flex flex-col justify-center bg-[#001223] bg-opacity-[92%] ">
       <div className="container flex items-center justify-between">
@@ -160,37 +168,37 @@ import { IoChevronDownOutline } from "react-icons/io5";
         <Dropdown
           trigger="hover"
           overlay={
-            <div className="rounded-sm bg-white relative top-3  shadow-sm w-fit">
+            <div
+              className="rounded-sm bg-white relative top-3 shadow-sm w-fit"
+              id="home"
+            >
               <>
                 <div
                   className={`py-2 flex items-center gap-2 group ${
-                    pathname == "/"
+                    pathname === "/"
                       ? "bg-primary text-white"
                       : "text-black bg-white"
                   } hover:bg-primary hover:text-white rounded-sm text-base text-secondary px-4 transition-all duration-200`}
                 >
-                  {/* {item?.icon} */}
                   <Link
                     className="group-hover:text-white transition-all duration-200"
-                    href={"/"}
+                    href="/"
                   >
                     Home 1
                   </Link>
                 </div>
                 <div className="py-2 flex items-center gap-2 group hover:bg-primary hover:text-white rounded-sm text-base text-secondary px-4 transition-all duration-200">
-                  {/* {item?.icon} */}
                   <Link
                     className="group-hover:text-white transition-all duration-200"
-                    href={"/home-2"}
+                    href="/home-2"
                   >
                     Home 2
                   </Link>
                 </div>
                 <div className="py-2 flex items-center gap-2 group hover:bg-primary hover:text-white rounded-sm text-base text-secondary px-4 transition-all duration-200">
-                  {/* {item?.icon} */}
                   <Link
                     className="group-hover:text-white transition-all duration-200"
-                    href={"/home-3"}
+                    href="/home-3"
                   >
                     Home 3
                   </Link>
@@ -199,11 +207,20 @@ import { IoChevronDownOutline } from "react-icons/io5";
             </div>
           }
         >
-          <div className="flex h-full items-center gap-x-1 cursor-pointer group">
-            <p className="flex items-center  gap-[6px] font-medium text-base  text-white group-hover:text-primary duration-200 transition-all">
+          <div
+            className="flex h-full items-center gap-x-1 cursor-pointer group"
+            onClick={handleDropdownVisibility}
+          >
+            <p
+              className={`flex items-center gap-[6px] font-medium text-base text-white group-hover:text-primary duration-200 transition-all`}
+            >
               Home
             </p>
-            <IoChevronDownOutline className="text-white text-base group-hover:text-primary group-hover:rotate-180 duration-200 transition-all" />
+            <IoChevronDownOutline
+              className={`text-white text-base group-hover:text-primary transition-all duration-200 ${
+                isOpen ? "rotate-180" : "rotate-0"
+              }`}
+            />
           </div>
         </Dropdown>
         <Link
@@ -260,13 +277,23 @@ import { IoChevronDownOutline } from "react-icons/io5";
             </div>
           }
         >
-          <div className="flex items-center gap-x-1 cursor-pointer group">
+          <div
+            className="flex items-center gap-x-1 cursor-pointer group"
+            onClick={handleDropdownVisibility2}
+          >
             <p className="font-medium text-base  text-white group-hover:text-primary duration-200 transition-all">
               More
             </p>
-            <IoChevronDownOutline className="text-white text-base group-hover:text-primary group-hover:rotate-180 duration-200 transition-all" />
+            <IoChevronDownOutline
+              className={`text-white text-base group-hover:text-primary transition-all duration-200 ${
+                isOpen2 ? "rotate-180" : "rotate-0"
+              }`}
+            />
           </div>
         </Dropdown>
+        <button className="cursor-pointer bg-primary text-white px-[32px] py-[16px] hover:scale-105 duration-300 rounded-[4px] transition-all">
+          Join Us
+        </button>
       </div>
     </div>
   );
