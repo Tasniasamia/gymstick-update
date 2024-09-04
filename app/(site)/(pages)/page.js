@@ -1,7 +1,13 @@
+import About from "@/app/components/(site)/home/about";
+import Feature from "@/app/components/(site)/home/feature";
+import Service from "@/app/components/(site)/home/service";
+
 const page = () => {
     return (
         <div>
-            Home
+            <Feature/>
+            <About/>
+            <Service/>
         </div>
     );
 };

@@ -1,5 +1,4 @@
 "use client";
-
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -11,23 +10,23 @@ const Footer = () => {
     <div className="bg-white pt-[114px] pb-[125px] border-t border-[#D9D9D9]">
       <div className="container grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 grid-cols-1  lg:gap-0 gap-y-[30px]">
         <div className="">
-        <div className="lg:w-[232px] w-full flex flex-col gap-[24px]">
-          <Image
-            src="/images/layout/logo.png"
-            width={218}
-            height={47}
-            alt="logo"
-            className="lg:h-[47px] lg:w-[218px] w-[150px] h-[40px]"
-          />
-          <div className="flex gap-[24px]">
-            <FaLinkedinIn className="text-[#2B2B2B] text-[19.23px] ms-[10.77px] hover:text-primary duration-200 transition-all" />
-            <FaFacebookF className="text-[#2B2B2B] text-[19.23px] hover:text-primary duration-200 transition-all" />
-            <FaTwitter className="text-[#2B2B2B] text-[19.23px] hover:text-primary duration-200 transition-all" />
+          <div className="lg:w-[232px] w-full flex flex-col gap-[24px]">
+            <Image
+              src="/images/layout/logo.png"
+              width={218}
+              height={47}
+              alt="logo"
+              className="lg:h-[47px] lg:w-[218px] w-[150px] h-[40px]"
+            />
+            <div className="flex gap-[24px]">
+              <FaLinkedinIn className="text-[#2B2B2B] text-[19.23px] ms-[10.77px] hover:text-primary duration-200 transition-all" />
+              <FaFacebookF className="text-[#2B2B2B] text-[19.23px] hover:text-primary duration-200 transition-all" />
+              <FaTwitter className="text-[#2B2B2B] text-[19.23px] hover:text-primary duration-200 transition-all" />
+            </div>
+            <p className="footer-text text-[#2B2B2B]">
+              &copy; gymstick 2024. All rights reserved
+            </p>
           </div>
-          <p className="footer-text text-[#2B2B2B]">
-            &copy; gymstick 2024. All rights reserved
-          </p>
-        </div>
         </div>
         <div className=" flex flex-col lg:items-end md:items-center">
           <ul className="list-none flex flex-col gap-[14px]">
@@ -81,14 +80,18 @@ const Footer = () => {
             </li>
             <li
               className={`footer-text mb-[9px] ${
-                pathname === "/small-business" ? "text-primary" : "text-[#534C4C]"
+                pathname === "/small-business"
+                  ? "text-primary"
+                  : "text-[#534C4C]"
               } text-[#534C4C] hover:text-primary duration-200 transition-all`}
             >
               <Link href="/small-business">Small Scale Business</Link>
             </li>
             <li
               className={`footer-text mb-[9px] ${
-                pathname === "/large-business" ? "text-primary" : "text-[#534C4C]"
+                pathname === "/large-business"
+                  ? "text-primary"
+                  : "text-[#534C4C]"
               } text-[#534C4C] hover:text-primary duration-200 transition-all`}
             >
               <Link href="/large-business">Large Scale Business</Link>
@@ -154,7 +157,9 @@ const Footer = () => {
             <li className="footer-title mb-[9px] ">Terms</li>
             <li
               className={`footer-text mb-[9px] ${
-                pathname === "/privacy-policy" ? "text-primary" : "text-[#534C4C]"
+                pathname === "/privacy-policy"
+                  ? "text-primary"
+                  : "text-[#534C4C]"
               } text-[#534C4C] hover:text-primary duration-200 transition-all`}
             >
               <Link href="/privacy-policy">Privacy Policy</Link>
@@ -168,21 +173,24 @@ const Footer = () => {
             </li>
             <li
               className={`footer-text mb-[9px] ${
-                pathname === "/term-of-service" ? "text-primary" : "text-[#534C4C]"
+                pathname === "/term-of-service"
+                  ? "text-primary"
+                  : "text-[#534C4C]"
               } text-[#534C4C] hover:text-primary duration-200 transition-all`}
             >
               <Link href="/term-of-service">Terms Of Service</Link>
             </li>
             <li
               className={`footer-text mb-[9px] ${
-                pathname === "/license-agreement" ? "text-primary" : "text-[#534C4C]"
+                pathname === "/license-agreement"
+                  ? "text-primary"
+                  : "text-[#534C4C]"
               } text-[#534C4C] hover:text-primary duration-200 transition-all`}
             >
               <Link href="/license-agreement">End User License Agreement</Link>
             </li>
           </ul>
         </div>
-       
       </div>
     </div>
   );
