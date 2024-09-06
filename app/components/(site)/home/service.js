@@ -20,8 +20,15 @@ const Service = () => {
           </span>
         </div>
         <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-[24px]">
-          <div className="py-[26px] ps-[26px] pe-[19px] group hover:bg-primary text-textcolor hover:text-white duration-200 transition-all">
-            
+          <div
+            className="py-[26px] ps-[26px] pe-[19px] group hover:bg-primary text-textcolor hover:text-white duration-200 transition-all rounded-[4px]"
+            style={{ boxShadow: "0px 0px 20px 0px #0000001A" }}
+          >
+            <div>
+              <h5 className="header-5-medium text-textcolor group-hover:text-white capitalize">
+                gym fitness class
+              </h5>
+            </div>
           </div>
         </div>
       </div>
