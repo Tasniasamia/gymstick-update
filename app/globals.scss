@@ -51,6 +51,12 @@ line-height: 120%; /* 21.6px */
 text-transform: capitalize;
 }
 .header-1-bold{
+  font-family: Noto Sans JP;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 83.2px;
+  }
+.header-2-bold{
 font-family: "Noto Sans JP";
 font-size: 48px;
 font-style: normal;
@@ -73,6 +79,15 @@ font-style: normal;
 font-weight: 400;
 line-height: 160%;
 }
+.paragraph-1-normal-4{
+font-family: Poppins;
+font-size: 16px;
+font-weight: 400;
+line-height: 25.6px;
+letter-spacing: 0.04em;
+text-align: left;
+
+}
 .paragraph-1-notoSans{
 font-family: Noto Sans JP;
 font-size: 16px;
@@ -81,6 +96,8 @@ line-height: 23.17px;
 
 
 }
+
+
 
 .all-view{
 font-family: "Noto Sans JP";
@@ -92,7 +109,10 @@ text-decoration-line: underline;
 text-transform: capitalize;
 }
 @media screen and (max-width: 768px) {
-  .header-1-bold {
+  .header-2-bold {
     font-size: 32px;
+  }
+  .header-1-bold {
+    font-size: 48px;
   }
 }

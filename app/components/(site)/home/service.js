@@ -13,7 +13,7 @@ const Service = () => {
               <HiOutlineLockClosed className="text-primary text-[24px]" />
               <h5 className="top-title">Service</h5>
             </div>
-            <h1 className="header-1-bold  text-textcolor ">
+            <h1 className="header-2-bold  text-textcolor ">
               Services We're Offering{" "}
             </h1>
           </div>

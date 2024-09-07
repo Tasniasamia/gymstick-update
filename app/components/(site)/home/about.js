@@ -20,7 +20,7 @@ const About = () => {
             <HiOutlineLockClosed className="text-primary text-[24px]" />
             <h5 className="top-title">About Us</h5>
           </div>
-          <h1 className="header-1-bold mb-[40px] text-textcolor ">
+          <h1 className="header-2-bold mb-[40px] text-textcolor ">
             we are pushing the limit of your core strength{" "}
           </h1>
           <p className="mb-[50px] text-secondarytext paragraph-1-normal">

@@ -20,8 +20,9 @@ const Header = () => {
   const handleDropdownVisibility2 = () => {
     setIsOpen2(!isOpen2);
   };
+  // bg-[#001223] bg-opacity-[92%] 
   return (
-    <div className="h-[120px] flex flex-col justify-center bg-[#001223] bg-opacity-[92%] ">
+    <div className="h-[120px] flex flex-col justify-center bg-transparent relative top-0 z-30">
       <div className="container flex items-center justify-between">
         <Image
           src="/images/layout/logo.png"

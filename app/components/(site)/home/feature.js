@@ -11,7 +11,7 @@ const Feature = () => {
           <HiOutlineLockClosed className="text-primary text-[24px]" />
           <h5 className="top-title">features</h5>
         </div>
-        <h1 className="header-1-bold mb-[60px] text-textcolor text-center">
+        <h1 className="header-2-bold mb-[60px] text-textcolor text-center">
           why choose us ?
         </h1>
         <div className="grid lg:grid-cols-4 gap-[24px]">
