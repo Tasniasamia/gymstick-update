@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <div className="overflow-hidden z-10 mt-[-120px] lg:h-[850px] h-[700px] gap-[300px]  bg-[url('/images/home/bg.png')] bg-cover flex items-end relative">
+    <div className="overflow-hidden z-10 mt-[-120px] lg:h-[850px] h-[700px] gap-[300px] mb-[120px]  bg-[url('/images/home/bg.png')] bg-cover flex items-end relative">
       <div className="xl:basis-1/3 basis-full xl:block hidden"></div>
       <div className="xl:basis-2/3 basis-full mb-[-20px] xl:opacity-100 opacity-40">
         <Image

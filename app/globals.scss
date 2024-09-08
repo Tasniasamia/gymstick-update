@@ -64,12 +64,27 @@ font-weight: 700;
 line-height: normal;
 text-transform: capitalize;
 }
+.header-4-bold{
+font-family: Noto Sans JP;
+font-size: 28px;
+font-weight: 700;
+line-height: 33.6px;
+text-align: left;
+
+}
 .header-5-medium{
 font-family: Poppins;
 font-size: 18px;
 font-weight: 600;
 line-height: 27px;
 text-align: left;
+
+}
+.header-6-normal{
+font-family: Poppins;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
 
 }
 .paragraph-1-normal{
@@ -97,7 +112,23 @@ line-height: 23.17px;
 
 }
 
+.table-text-bold{
+font-family: Poppins;
+font-size: 24px;
+font-weight: 600;
+line-height: 36px;
+text-align: left;
 
+}
+.table-text2-normal{
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  
+  
+  }
 
 .all-view{
 font-family: "Noto Sans JP";
@@ -108,6 +139,24 @@ line-height: 24px; /* 150% */
 text-decoration-line: underline;
 text-transform: capitalize;
 }
+.bmi-calculator .ant-select-arrow {
+  color: #f90000 !important;
+  font-weight: bold;
+}
+.bmi-calculator .ant-input {
+  // @apply px-5 py-[15px] #{!important};
+  // padding:18px 0px!important
+}
+.bmi-calculator .ant-input-number {
+  width:100%!important;
+  padding:10px 0px!important
+
+}
+.bmi-calculator .ant-select-single {
+  font-size: 14px;
+  height: 52px;
+}
+
 @media screen and (max-width: 768px) {
   .header-2-bold {
     font-size: 32px;
