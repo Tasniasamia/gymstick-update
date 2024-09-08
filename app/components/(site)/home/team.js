@@ -21,12 +21,12 @@ const Team = () => {
           meet the pros
         </h1>
 
-        <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-[24px]">
+        <div className="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-[24px]">
            <div
             className="group cursor-pointer"
             style={{ boxShadow: "0px 0px 20px 0px #0000001A" }}
           >
-            <div className="relative group md:w-[312px] w-full h-[290px] overflow-hidden">
+            <div className="relative group xl:w-[312px] w-full h-[290px] overflow-hidden">
               <Image
                 src="/images/home/team.png"
                 className="w-full h-full"
@@ -57,111 +57,7 @@ const Team = () => {
               <LiaArrowRightSolid className="text-white text-[18px] " />
             </div>
           </div>
-          <div
-            className="group cursor-pointer"
-            style={{ boxShadow: "0px 0px 20px 0px #0000001A" }}
-          >
-            <div className="relative group md:w-[312px] w-full h-[290px] overflow-hidden">
-              <Image
-                src="/images/home/team.png"
-                className="w-full h-full"
-                alt="team"
-                width={312}
-                height={290}
-              />
-              <ul className="list-done bg-primary flex flex-col bg-opacity-[20%] w-[61px] h-[213px] justify-center items-center gap-[28px] absolute  left-[24px] bottom-[-24px] group-hover:bottom-0 opacity-0 group-hover:opacity-100 duration-300 transition-all">
-                <li>
-                  <FaXTwitter className="text-white text-[24px]" />
-                </li>
-                <li>
-                  <FaFacebookF className="text-white text-[24px]" />
-                </li>
-                <li>
-                  <FaLinkedinIn className="text-white text-[24px]" />
-                </li>
-                <li>
-                  <FaInstagram className="text-white text-[24px]" />
-                </li>
-              </ul>
-            </div>
-            <div className="p-[24px] bg-white group-hover:bg-primary text-textcolor group-hover:text-white duration-300 transition-all flex justify-between items-center">
-              <div>
-                <h5 className="header-5-medium capitalize">dainne russell</h5>
-                <h6 className="header-6-normal capitalize">gym instractor</h6>
-              </div>
-              <LiaArrowRightSolid className="text-white text-[18px] " />
-            </div>
-          </div>
-          <div
-            className="group cursor-pointer"
-            style={{ boxShadow: "0px 0px 20px 0px #0000001A" }}
-          >
-            <div className="relative group md:w-[312px] w-full h-[290px] overflow-hidden">
-              <Image
-                src="/images/home/team.png"
-                className="w-full h-full"
-                alt="team"
-                width={312}
-                height={290}
-              />
-              <ul className="list-done bg-primary flex flex-col bg-opacity-[20%] w-[61px] h-[213px] justify-center items-center gap-[28px] absolute  left-[24px] bottom-[-24px] group-hover:bottom-0 opacity-0 group-hover:opacity-100 duration-300 transition-all">
-                <li>
-                  <FaXTwitter className="text-white text-[24px]" />
-                </li>
-                <li>
-                  <FaFacebookF className="text-white text-[24px]" />
-                </li>
-                <li>
-                  <FaLinkedinIn className="text-white text-[24px]" />
-                </li>
-                <li>
-                  <FaInstagram className="text-white text-[24px]" />
-                </li>
-              </ul>
-            </div>
-            <div className="p-[24px] bg-white group-hover:bg-primary text-textcolor group-hover:text-white duration-300 transition-all flex justify-between items-center">
-              <div>
-                <h5 className="header-5-medium capitalize">dainne russell</h5>
-                <h6 className="header-6-normal capitalize">gym instractor</h6>
-              </div>
-              <LiaArrowRightSolid className="text-white text-[18px] " />
-            </div>
-          </div>
-          <div
-            className="group cursor-pointer"
-            style={{ boxShadow: "0px 0px 20px 0px #0000001A" }}
-          >
-            <div className="relative group md:w-[312px] w-full h-[290px] overflow-hidden">
-              <Image
-                src="/images/home/team.png"
-                className="w-full h-full"
-                alt="team"
-                width={312}
-                height={290}
-              />
-              <ul className="list-done bg-primary flex flex-col bg-opacity-[20%] w-[61px] h-[213px] justify-center items-center gap-[28px] absolute  left-[24px] bottom-[-24px] group-hover:bottom-0 opacity-0 group-hover:opacity-100 duration-300 transition-all">
-                <li>
-                  <FaXTwitter className="text-white text-[24px]" />
-                </li>
-                <li>
-                  <FaFacebookF className="text-white text-[24px]" />
-                </li>
-                <li>
-                  <FaLinkedinIn className="text-white text-[24px]" />
-                </li>
-                <li>
-                  <FaInstagram className="text-white text-[24px]" />
-                </li>
-              </ul>
-            </div>
-            <div className="p-[24px] bg-white group-hover:bg-primary text-textcolor group-hover:text-white duration-300 transition-all flex justify-between items-center">
-              <div>
-                <h5 className="header-5-medium capitalize">dainne russell</h5>
-                <h6 className="header-6-normal capitalize">gym instractor</h6>
-              </div>
-              <LiaArrowRightSolid className="text-white text-[18px] " />
-            </div>
-          </div>
+          
         </div>
       </div>
     </div>

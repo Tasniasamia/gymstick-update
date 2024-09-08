@@ -143,9 +143,9 @@ const BMI = () => {
                 ]}
               >
                 <Select placeholder={"Gender"}>
-                  <Option value="male">{"Male"}</Option>
-                  <Option value="female">{"Female"}</Option>
-                  <Option value="other">{"Other"}</Option>
+                  <Select.Option value="male">{"Male"}</Select.Option>
+                  <Select.Option value="female">{"Female"}</Select.Option>
+                  <Select.Option value="other">{"Other"}</Select.Option>
                 </Select>
               </Form.Item>
               <Form.Item
@@ -159,9 +159,9 @@ const BMI = () => {
                 ]}
               >
                 <Select placeholder={"Select an Activity factor"}>
-                  <Option value="male">{"Male"}</Option>
-                  <Option value="female">{"Female"}</Option>
-                  <Option value="other">{"Other"}</Option>
+                  <Select.Option value="male">{"Male"}</Select.Option>
+                  <Select.Option value="female">{"Female"}</Select.Option>
+                  <Select.Option value="other">{"Other"}</Select.Option>
                 </Select>
               </Form.Item>
 
