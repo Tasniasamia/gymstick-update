@@ -6,6 +6,7 @@ import Hero from "@/app/components/(site)/home/hero";
 import Service from "@/app/components/(site)/home/service";
 import Shop from "@/app/components/(site)/home/shop";
 import Team from "@/app/components/(site)/home/team";
+import Testimonial from "@/app/components/(site)/home/testimonial";
 
 const page = () => {
     return (
@@ -15,6 +16,7 @@ const page = () => {
             <About/>
             <Service/>
             <BMI/>
+            <Testimonial/>
             <Team/>
             <Shop/>
             <Blog/>
