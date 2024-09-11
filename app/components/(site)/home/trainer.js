@@ -6,7 +6,7 @@ const Trainer = () => {
         <div className="container">
             <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
             <div className="rounded-b-[4px] border border-[#D9D9D9] w-full">
-           <div className="w-full h-[468px]  custom-shape">
+           <div className="w-full h-[468px]  custom-shape relative">
             <Image src="/images/home/team.png" alt="team" width={424} height={464} className="h-full w-full object-fill" />
            </div>
            <div className="ps-[50px]">
