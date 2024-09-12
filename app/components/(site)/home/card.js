@@ -9,7 +9,7 @@ const Certificate = () => {
       <div className="container">
         <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:justify-items-start justify-items-center gap-[24px]">
           <div className="relative col-span-1  w-[538] h-[378px]">
-            <div className="absolute  bottom-0  right-0 lg:w-[50px] w-[48px] lg:h-[50px] h-[48px] flex justify-center items-center rounded-full bg-black">
+            <div className="absolute flex  bottom-0  right-0 lg:w-[50px] w-[48px] lg:h-[50px] h-[48px]  justify-center items-center rounded-full bg-black">
               <CgArrowTopRight className="text-[24px] text-white  " />
             </div>
             <div
