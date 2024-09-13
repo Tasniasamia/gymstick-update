@@ -19,6 +19,8 @@ module.exports = {
         textcolor2:" #534C4C",
         
       },
+      letterSpacing: {
+        small: '2%',}
     },
   },
   plugins: [],

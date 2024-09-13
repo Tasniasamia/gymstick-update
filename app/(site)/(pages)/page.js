@@ -10,6 +10,7 @@ import Shop from "@/app/components/(site)/home/shop";
 import Team from "@/app/components/(site)/home/team";
 import Testimonial from "@/app/components/(site)/home/testimonial";
 import Trainer from "@/app/components/(site)/home/trainer";
+import Work from "@/app/components/(site)/home/work";
 
 const page = () => {
     return (
@@ -26,6 +27,7 @@ const page = () => {
             <Blog/>
             <Trainer/>
             <Certificate/>
+            <Work/>
         </div>
     );
 };
