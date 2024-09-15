@@ -11,6 +11,7 @@ import Team from "@/app/components/(site)/home/team";
 import Testimonial from "@/app/components/(site)/home/testimonial";
 import Trainer from "@/app/components/(site)/home/trainer";
 import Work from "@/app/components/(site)/home/work";
+import Workdynamic from "@/app/components/(site)/home/workdynamic";
 
 const page = () => {
     return (
@@ -27,7 +28,8 @@ const page = () => {
             <Blog/>
             <Trainer/>
             <Certificate/>
-            <Work/>
+            {/* <Work/> */}
+            <Workdynamic/>
         </div>
     );
 };

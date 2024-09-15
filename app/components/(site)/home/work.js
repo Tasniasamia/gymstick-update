@@ -4,6 +4,44 @@ import Image from "next/image";
 import { FiChevronsRight } from "react-icons/fi";
 
 const Work = () => {
+  const data=[
+    {
+      id:1,
+      title:"User Research",
+      description:"Gathering the Client's Business and Goals",
+      image:'/service.png'
+    },
+    {
+      id:2,
+      title:"User Research",
+      description:"Gathering the Client's Business and Goals",
+      image:'/service.png'
+    },
+    {
+      id:3,
+      title:"User Research",
+      description:"Gathering the Client's Business and Goals",
+      image:'/service.png'
+    },
+    {
+      id:4,
+      title:"User Research",
+      description:"Gathering the Client's Business and Goals",
+      image:'/service.png'
+    },
+    {
+      id:5,
+      title:"User Research",
+      description:"Gathering the Client's Business and Goals",
+      image:'/service.png'
+    },
+    {
+      id:6,
+      title:"User Research",
+      description:"Gathering the Client's Business and Goals",
+      image:'/service.png'
+    }
+  ]
   return (
     <div className="bg-black py-[150px]">
       <div className="container  grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-y-[53px]">
