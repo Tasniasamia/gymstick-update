@@ -6,8 +6,8 @@ import { FiChevronsRight } from "react-icons/fi";
 const Work = () => {
   return (
     <div className="bg-black py-[150px]">
-      <div className="container  grid lg:grid-cols-3 grid-cols-1 lg:gap-y-[53px]">
-        <div className="flex lg:flex-row flex-col w-full items-center">
+      <div className="container  grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-y-[53px]">
+        <div className="flex md:flex-row flex-col w-full items-center">
           <div className="relative w-full flex lg:flex-row flex-col justify-center items-center h-[200px] overflow-hidden rounded-[10px]">
             <div className="relative h-[197px] z-20 w-[99%]  bg-[#151515] ps-[20px] pb-[44px] pt-[20px] rounded-[10px]">
               <Image
@@ -26,15 +26,15 @@ const Work = () => {
             </div>
 
             {/* Centering the red div both horizontally and vertically */}
-            <div className="card z-0 h-full absolute top-1/2 left-1/2 transform   lg:w-[110%] w-[102%] -translate-x-1/2 -translate-y-1/2"></div>
+            <div className="card z-0 h-full  absolute top-1/2 left-1/2 transform   md:w-[120%] w-[105%]  -translate-x-1/2 -translate-y-1/2"></div>
           </div>
 
           <div className="w-[53px]  text-white lg:h-[197px] h-[53px] flex justify-center items-center text-[20px]">
-            <FiChevronsRight  className="lg:rotate-0 rotate-[90deg]"/>
+            <FiChevronsRight  className="md:rotate-0 rotate-[90deg]"/>
           </div>
         </div>
 
-        <div className="flex lg:flex-row flex-col w-full items-center">
+        <div className="flex md:flex-row flex-col w-full items-center">
           <div className="relative w-full flex justify-center items-center h-[200px] overflow-hidden rounded-[10px]">
             <div className="relative h-[197px] z-20 w-[99%] bg-[#151515] ps-[20px] pb-[44px] pt-[20px] rounded-[10px]">
               <Image
@@ -53,14 +53,17 @@ const Work = () => {
             </div>
 
             {/* Centering the red div both horizontally and vertically */}
-            <div className="card z-0 h-full absolute top-1/2 left-1/2 transform   w-[110%]"></div>
+            <div className="card z-0 h-full  absolute top-1/2 left-1/2 transform   w-[120%]   -translate-x-1/2 -translate-y-1/2"></div>
           </div>
 
-          <div className="w-[53px] text-white lg:h-[197px] h-[53px] flex justify-center items-center text-[20px]">
-          <FiChevronsRight  className="lg:rotate-0 rotate-[90deg]"/>
+          <div className="w-[53px] text-white md:h-[197px] h-[53px] lg:flex md:hidden flex justify-center items-center text-[20px]">
+          <FiChevronsRight  className="md:rotate-0 rotate-[90deg]"/>
           </div>
         </div>
-        <div className="flex lg:flex-row flex-col w-full items-center">
+        <div className="flex md:flex-row flex-col w-full items-center">
+        <div className="w-[53px] text-white md:h-[197px] h-[53px] lg:hidden md:flex hidden justify-center items-center text-[20px]">
+          <FiChevronsRight  className="md:rotate-0 rotate-[90deg]"/>
+          </div>
           <div className="relative w-full flex justify-center items-center h-[200px] overflow-hidden rounded-[10px]">
             <div className="relative h-[197px] z-20 w-[99%] bg-[#151515] ps-[20px] pb-[44px] pt-[20px] rounded-[10px]">
               <Image
@@ -79,14 +82,14 @@ const Work = () => {
             </div>
 
             {/* Centering the red div both horizontally and vertically */}
-            <div className="card z-0 h-full absolute top-1/2 left-1/2 transform   w-[110%]"></div>
+            <div className="card z-0 h-full  absolute top-1/2 left-1/2 transform   w-[120%]   -translate-x-1/2 -translate-y-1/2"></div>
           </div>
        
         
         </div>
-        <div className="flex lg:flex-row flex-col w-full items-center">
+        <div className="flex md:flex-row flex-col w-full items-center">
         <div className="w-[53px] text-white lg:h-[197px] h-[53px] flex justify-center items-center text-[20px]">
-        <FiChevronsRight  className="lg:rotate-0 rotate-[90deg]"/>
+        <FiChevronsRight  className="md:rotate-0 rotate-[90deg]"/>
           </div>
           <div className="relative w-full flex justify-center items-center h-[200px] overflow-hidden rounded-[10px]">
             <div className="relative h-[197px] z-20 w-[99%] bg-[#151515] ps-[20px] pb-[44px] pt-[20px] rounded-[10px]">
@@ -106,14 +109,17 @@ const Work = () => {
             </div>
 
             {/* Centering the red div both horizontally and vertically */}
-            <div className="card z-0 h-full absolute top-1/2 left-1/2 transform   w-[120%]"></div>
+            <div className="card z-0 h-full  absolute top-1/2 left-1/2 transform  w-[130%]   -translate-x-1/2 -translate-y-1/2"></div>
           </div>
 
-          <div className="w-[53px] text-white lg:h-[197px] h-[53px]  flex justify-center items-center text-[20px]">
-          <FiChevronsRight  className="lg:rotate-0 rotate-[90deg]"/>
+          <div className="w-[53px] text-white md:h-[197px] h-[53px]  lg:flex flex md:hidden justify-center items-center text-[20px]">
+          <FiChevronsRight  className="md:rotate-0 rotate-[90deg]"/>
           </div>
         </div>
-        <div className="flex lg:flex-row flex-col w-full items-center">
+        <div className="flex md:flex-row flex-col w-full items-center">
+        <div className="w-[53px] text-white md:h-[197px] h-[53px]  lg:hidden hidden md:flex justify-center items-center text-[20px]">
+          <FiChevronsRight  className="md:rotate-0 rotate-[90deg]"/>
+          </div>
           <div className="relative w-full flex justify-center items-center h-[200px] overflow-hidden rounded-[10px]">
             <div className="relative h-[197px] z-20 w-[99%] bg-[#151515] ps-[20px] pb-[44px] pt-[20px] rounded-[10px]">
               <Image
@@ -132,14 +138,14 @@ const Work = () => {
             </div>
 
             {/* Centering the red div both horizontally and vertically */}
-            <div className="card z-0 h-full absolute top-1/2 left-1/2 transform   w-[110%]"></div>
+            <div className="card z-0 h-full  absolute top-1/2 left-1/2 transform   w-[120%]   -translate-x-1/2 -translate-y-1/2"></div>
           </div>
 
-          <div className="w-[53px] text-white lg:h-[197px] h-[53px] flex justify-center items-center text-[20px]">
-          <FiChevronsRight  className="lg:rotate-0 rotate-[90deg]"/>
+          <div className="w-[53px] text-white md:h-[197px] h-[53px] flex justify-center items-center text-[20px]">
+          <FiChevronsRight  className="md:rotate-0 rotate-[90deg]"/>
           </div>
         </div>
-        <div className="flex lg:flex-row flex-col w-full items-center">
+        <div className="flex md:flex-row flex-col w-full items-center">
           <div className="relative w-full flex justify-center items-center h-[200px] overflow-hidden rounded-[10px]">
             <div className="relative h-[197px] z-20 w-[99%] bg-[#151515] ps-[20px] pb-[44px] pt-[20px] rounded-[10px]">
               <Image
@@ -158,7 +164,7 @@ const Work = () => {
             </div>
 
             {/* Centering the red div both horizontally and vertically */}
-            <div className="card z-0 h-full absolute top-1/2 left-1/2 transform   w-[110%]"></div>
+            <div className="card z-0 h-full  absolute top-1/2 left-1/2 transform w-[120%] -translate-x-1/2 -translate-y-1/2"></div>
           </div>
        
          
