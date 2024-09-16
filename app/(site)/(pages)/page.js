@@ -2,6 +2,7 @@ import About from "@/app/components/(site)/home/about";
 import Blog from "@/app/components/(site)/home/blog";
 import BMI from "@/app/components/(site)/home/bmi";
 import Certificate from "@/app/components/(site)/home/card";
+import Contact from "@/app/components/(site)/home/contact";
 import Feature from "@/app/components/(site)/home/feature";
 import Hero from "@/app/components/(site)/home/hero";
 import Schedule from "@/app/components/(site)/home/schedule";
@@ -30,6 +31,7 @@ const page = () => {
             <Certificate/>
             {/* <Work/> */}
             <Workdynamic/>
+            <Contact/>
         </div>
     );
 };
