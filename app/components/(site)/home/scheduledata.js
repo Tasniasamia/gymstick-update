@@ -32,28 +32,19 @@ export const ScheduleData = {
             time: "12:00 PM",
             Monday: "HIIT",
             Tuesday: "HIIT",
-            Wednesday: "HIIT",
+            Wednesday: null,
             Thursday: "HIIT",
             Friday: "HIIT",
-            Saturday: "HIIT",
+            Saturday: "",
             Sunday: "HIIT"
           },
-          {
-            time: "1:00 PM",
-            Monday: "Pilates",
-            Tuesday: "Pilates",
-            Wednesday: "Pilates",
-            Thursday: "Pilates",
-            Friday: "Pilates",
-            Saturday: "Pilates",
-            Sunday: "Pilates"
-          },
+          
           {
             time: "2:00 PM",
             Monday: "CrossFit",
             Tuesday: "CrossFit",
             Wednesday: "CrossFit",
-            Thursday: "CrossFit",
+            Thursday: "",
             Friday: "CrossFit",
             Saturday: "CrossFit",
             Sunday: "CrossFit"
@@ -98,16 +89,7 @@ export const ScheduleData = {
       {
         category: "evening",
         workouts: [
-          {
-            time: "6:00 PM",
-            Monday: "Yoga",
-            Tuesday: "Meditation",
-            Wednesday: "Yoga",
-            Thursday: "Meditation",
-            Friday: "Yoga",
-            Saturday: "Yoga",
-            Sunday: "Meditation"
-          },
+          
           {
             time: "7:00 PM",
             Monday: "Relaxation",
