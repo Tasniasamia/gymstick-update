@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { IoMdClose } from "react-icons/io";
 import { FaBars } from "react-icons/fa";
 import { Dropdown } from "antd";
@@ -20,6 +20,32 @@ const Header = () => {
   const handleDropdownVisibility2 = () => {
     setIsOpen2(!isOpen2);
   };
+
+ 
+  
+  const [theme, setTheme] = useState(() => {
+    if (typeof window !== "undefined" && localStorage.getItem("theme")) {
+      return localStorage.getItem("theme");
+    } else {
+      return "light"; // Default theme if none is set in localStorage
+    }
+  });
+
+  const handleToggle = () => {
+    setTheme(theme === "light" ? "dark" : "light");
+  };
+
+  useEffect(() => {
+    if (theme === "dark") {
+      document.documentElement.classList.add("dark");
+      document.documentElement.setAttribute("data-theme", "dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+      document.documentElement.setAttribute("data-theme", "light");
+    }
+    localStorage.setItem("theme", theme);
+  }, [theme]);
+  
   // bg-[#001223] bg-opacity-[92%] 
   return (
     <div className="h-[120px] flex flex-col justify-center bg-transparent relative top-0 z-30">
@@ -139,7 +165,15 @@ const Header = () => {
                 <IoChevronDownOutline className="text-white text-base group-hover:text-primary group-hover:rotate-180 duration-200 transition-all" />
               </div>
             </Dropdown>
+            <div
+              className={`nav-link text-white cursor-pointer`}
+              onClick={handleToggle}
+              
+            >
+              <span>{theme === "light" ? "Dark mode" : "Light mode"}</span>
+            </div>
           </div>
+
           <button className="cursor-pointer bg-primary text-white px-[32px] py-[16px] hover:scale-105 duration-300 rounded-[4px] transition-all">
             Join Us
           </button>
