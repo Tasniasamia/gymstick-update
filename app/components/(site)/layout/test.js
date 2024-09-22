@@ -13,7 +13,7 @@ import { fetchBooks } from '../../../helpers/backend_helper';
 import { useRouter } from 'next/router';
 import Image from 'next/image';
 import { useCart } from '../../../contexts/cart';
-import Title from '../../../components/common/title';
+import Head from 'next/head';
 
 const tabData = [
     {
@@ -62,7 +62,10 @@ const BookDetails = () => {
 
     return (
         <div>
-            <Title>Product | Details</Title>
+            <Head>
+            <title>Product | Details</title>
+
+            </Head>
             <Banner3 second_title='Product' third_title='Details' />
 
             <div className='container mx-auto py-9 md:py-12 lg:py-24'>
