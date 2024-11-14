@@ -13,8 +13,26 @@ import Testimonial from "@/app/components/(site)/home/testimonial";
 import Trainer from "@/app/components/(site)/home/trainer";
 import Work from "@/app/components/(site)/home/work";
 import Workdynamic from "@/app/components/(site)/home/workdynamic";
+import CustomSlider from "@/app/components/(site)/home/customSlider";
 
 const page = () => {
+    
+const slides = [
+    {
+        title: 'Slide 1',
+        description: 'This is the first slide.',
+    },
+    {
+     
+        title: 'Slide 2',
+        description: 'This is the second slide.',
+    },
+    {
+        
+        title: 'Slide 3',
+        description: 'This is the third slide.',
+    },
+];
     return (
         <div>
             <Hero/>
@@ -32,6 +50,7 @@ const page = () => {
             {/* <Work/> */}
             <Workdynamic/>
             <Contact/>
+            <CustomSlider slides={slides} autoPlay={true} interval={3000} />
         </div>
     );
 };
